@@ -4,5 +4,7 @@
 <dict>
 	<key>com.apple.security.app-sandbox</key>
 	<true/>
+	<key>com.apple.security.network.client</key> 		<!-- Required to fetch data from the internet. -->
+	<true/>	
 </dict>
 </plist>

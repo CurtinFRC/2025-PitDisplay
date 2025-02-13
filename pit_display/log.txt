@@ -1,0 +1,2142 @@
+Checking for wireless devices...
+
+Connected devices:
+macOS (desktop)                 • macos                 • darwin-arm64 • macOS 15.2 24C101 darwin-arm64
+Mac Designed for iPad (desktop) • mac-designed-for-ipad • darwin       • macOS 15.2 24C101 darwin-arm64
+[1]: macOS (macos)
+[2]: Mac Designed for iPad (mac-designed-for-ipad)
+Please choose one (or "q" to quit): 1
+Launching lib/main.dart on macOS in debug mode...
+Building macOS application...                                   
+✓ Built build/macos/Build/Products/Debug/pit_display.app
+2025-01-30 15:56:38.004 pit_display[27866:2892422] +[IMKClient subclass]: chose IMKClient_Modern
+2025-01-30 15:56:38.004 pit_display[27866:2892422] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+Syncing files to device macOS...                                    62ms
+
+Flutter run key commands.
+r Hot reload. 🔥🔥🔥
+R Hot restart.
+h List all available interactive commands.
+d Detach (terminate "flutter run" but leave application running).
+c Clear the screen
+q Quit (terminate the application on the device).
+
+A Dart VM Service on macOS is available at: http://127.0.0.1:63566/jKezxecclu8=/
+The Flutter DevTools debugger and profiler on macOS is available at: http://127.0.0.1:9101?uri=http://127.0.0.1:63566/jKezxecclu8=/
+flutter: [38;5;12m┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+flutter: [38;5;12m│ #0   TBA.getTeamMatchSchedule (package:pit_display/services/tba_api.dart:86:12)[0m
+flutter: [38;5;12m│ #1   <asynchronous suspension>[0m
+flutter: [38;5;12m├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄[0m
+flutter: [38;5;12m│ 💡 [[0m
+flutter: [38;5;12m│ 💡   {[0m
+flutter: [38;5;12m│ 💡     "actual_time": 1710542037,[0m
+flutter: [38;5;12m│ 💡     "alliances": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 31,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc7497",[0m
+flutter: [38;5;12m│ 💡           "frc6996",[0m
+flutter: [38;5;12m│ 💡           "frc9433"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 49,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc4788",[0m
+flutter: [38;5;12m│ 💡           "frc9189",[0m
+flutter: [38;5;12m│ 💡           "frc5584"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "comp_level": "qm",[0m
+flutter: [38;5;12m│ 💡     "event_key": "2024ausc",[0m
+flutter: [38;5;12m│ 💡     "key": "2024ausc_qm3",[0m
+flutter: [38;5;12m│ 💡     "match_number": 3,[0m
+flutter: [38;5;12m│ 💡     "post_result_time": 1710542379,[0m
+flutter: [38;5;12m│ 💡     "predicted_time": 1710542906,[0m
+flutter: [38;5;12m│ 💡     "score_breakdown": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 7,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 1,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": true,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": true,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": true,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 3,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 1,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "StageLeft",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "None",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 4,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 0,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 1,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 3,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 3,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 24,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 1,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 5,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 6,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 12,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 20,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 31,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "No",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 7,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 1,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": true,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": true,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": true,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 2,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "None",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 5,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": true,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 3,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 3,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 3,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 37,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 16,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 32,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 35,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 49,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "set_number": 1,[0m
+flutter: [38;5;12m│ 💡     "time": 1710540780,[0m
+flutter: [38;5;12m│ 💡     "videos": [[0m
+flutter: [38;5;12m│ 💡       {[0m
+flutter: [38;5;12m│ 💡         "key": "TXXEMhO6Jk4",[0m
+flutter: [38;5;12m│ 💡         "type": "youtube"[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     ],[0m
+flutter: [38;5;12m│ 💡     "winning_alliance": "red"[0m
+flutter: [38;5;12m│ 💡   },[0m
+flutter: [38;5;12m│ 💡   {[0m
+flutter: [38;5;12m│ 💡     "actual_time": 1710545944,[0m
+flutter: [38;5;12m│ 💡     "alliances": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 59,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc4774",[0m
+flutter: [38;5;12m│ 💡           "frc6083",[0m
+flutter: [38;5;12m│ 💡           "frc4788"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 31,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc9146",[0m
+flutter: [38;5;12m│ 💡           "frc5584",[0m
+flutter: [38;5;12m│ 💡           "frc8844"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "comp_level": "qm",[0m
+flutter: [38;5;12m│ 💡     "event_key": "2024ausc",[0m
+flutter: [38;5;12m│ 💡     "key": "2024ausc_qm9",[0m
+flutter: [38;5;12m│ 💡     "match_number": 9,[0m
+flutter: [38;5;12m│ 💡     "post_result_time": 1710546173,[0m
+flutter: [38;5;12m│ 💡     "predicted_time": 1710546924,[0m
+flutter: [38;5;12m│ 💡     "score_breakdown": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 4,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "No",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 29,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 5,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 25,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 25,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": false,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 3,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 3,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 9,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": true,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 2,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 21,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 9,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 18,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 18,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 59,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "No",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 12,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 2,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 10,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 10,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": false,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 2,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "None",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 2,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 0,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 1,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 1,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 1,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 19,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 8,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 16,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 17,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 31,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "set_number": 1,[0m
+flutter: [38;5;12m│ 💡     "time": 1710544020,[0m
+flutter: [38;5;12m│ 💡     "videos": [[0m
+flutter: [38;5;12m│ 💡       {[0m
+flutter: [38;5;12m│ 💡         "key": "KqlDKPqj0hQ",[0m
+flutter: [38;5;12m│ 💡         "type": "youtube"[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     ],[0m
+flutter: [38;5;12m│ 💡     "winning_alliance": "blue"[0m
+flutter: [38;5;12m│ 💡   },[0m
+flutter: [38;5;12m│ 💡   {[0m
+flutter: [38;5;12m│ 💡     "actual_time": 1710550870,[0m
+flutter: [38;5;12m│ 💡     "alliances": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 24,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc9715"[0m
+flutter: [38;5;12m│ 💡         ],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc9715",[0m
+flutter: [38;5;12m│ 💡           "frc5985",[0m
+flutter: [38;5;12m│ 💡           "frc4788"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 48,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc9144"[0m
+flutter: [38;5;12m│ 💡         ],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc9144",[0m
+flutter: [38;5;12m│ 💡           "frc3132",[0m
+flutter: [38;5;12m│ 💡           "frc6996"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "comp_level": "qm",[0m
+flutter: [38;5;12m│ 💡     "event_key": "2024ausc",[0m
+flutter: [38;5;12m│ 💡     "key": "2024ausc_qm18",[0m
+flutter: [38;5;12m│ 💡     "match_number": 18,[0m
+flutter: [38;5;12m│ 💡     "post_result_time": 1710551080,[0m
+flutter: [38;5;12m│ 💡     "predicted_time": 1710551344,[0m
+flutter: [38;5;12m│ 💡     "score_breakdown": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "No",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 5,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 1,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": false,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 3,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 3,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 0,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 19,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 8,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 16,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 16,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 24,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 4,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 14,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 2,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 10,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 10,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": false,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 1,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "None",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "None",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 1,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 2,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 2,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 34,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 3,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 15,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 8,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 16,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 33,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 48,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "set_number": 1,[0m
+flutter: [38;5;12m│ 💡     "time": 1710548880,[0m
+flutter: [38;5;12m│ 💡     "videos": [[0m
+flutter: [38;5;12m│ 💡       {[0m
+flutter: [38;5;12m│ 💡         "key": "bcLzdf-8JkI",[0m
+flutter: [38;5;12m│ 💡         "type": "youtube"[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     ],[0m
+flutter: [38;5;12m│ 💡     "winning_alliance": "red"[0m
+flutter: [38;5;12m│ 💡   },[0m
+flutter: [38;5;12m│ 💡   {[0m
+flutter: [38;5;12m│ 💡     "actual_time": 1710556229,[0m
+flutter: [38;5;12m│ 💡     "alliances": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 63,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc8011",[0m
+flutter: [38;5;12m│ 💡           "frc6434",[0m
+flutter: [38;5;12m│ 💡           "frc6191"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 92,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc4788",[0m
+flutter: [38;5;12m│ 💡           "frc9146",[0m
+flutter: [38;5;12m│ 💡           "frc8814"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "comp_level": "qm",[0m
+flutter: [38;5;12m│ 💡     "event_key": "2024ausc",[0m
+flutter: [38;5;12m│ 💡     "key": "2024ausc_qm25",[0m
+flutter: [38;5;12m│ 💡     "match_number": 25,[0m
+flutter: [38;5;12m│ 💡     "post_result_time": 1710556526,[0m
+flutter: [38;5;12m│ 💡     "predicted_time": 1710556247,[0m
+flutter: [38;5;12m│ 💡     "score_breakdown": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "No",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 17,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 3,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 15,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 15,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": false,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 5,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 6,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "StageLeft",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "StageRight",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "None",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 11,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": true,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 4,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 1,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 9,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 5,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 42,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 4,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 20,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 3,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 6,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 31,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 63,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": true,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 17,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 3,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 15,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 15,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": true,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": true,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 3,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 1,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "StageLeft",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "None",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 4,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 2,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 45,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 2,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 2,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 30,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 12,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 24,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 26,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 92,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "set_number": 1,[0m
+flutter: [38;5;12m│ 💡     "time": 1710556080,[0m
+flutter: [38;5;12m│ 💡     "videos": [[0m
+flutter: [38;5;12m│ 💡       {[0m
+flutter: [38;5;12m│ 💡         "key": "onMZ3Lr9zL0",[0m
+flutter: [38;5;12m│ 💡         "type": "youtube"[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     ],[0m
+flutter: [38;5;12m│ 💡     "winning_alliance": "red"[0m
+flutter: [38;5;12m│ 💡   },[0m
+flutter: [38;5;12m│ 💡   {[0m
+flutter: [38;5;12m│ 💡     "actual_time": 1710562838,[0m
+flutter: [38;5;12m│ 💡     "alliances": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 34,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc4729",[0m
+flutter: [38;5;12m│ 💡           "frc4788",[0m
+flutter: [38;5;12m│ 💡           "frc8503"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 26,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc4817",[0m
+flutter: [38;5;12m│ 💡           "frc9147",[0m
+flutter: [38;5;12m│ 💡           "frc9599"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "comp_level": "qm",[0m
+flutter: [38;5;12m│ 💡     "event_key": "2024ausc",[0m
+flutter: [38;5;12m│ 💡     "key": "2024ausc_qm37",[0m
+flutter: [38;5;12m│ 💡     "match_number": 37,[0m
+flutter: [38;5;12m│ 💡     "post_result_time": 1710563097,[0m
+flutter: [38;5;12m│ 💡     "predicted_time": 1710562793,[0m
+flutter: [38;5;12m│ 💡     "score_breakdown": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "No",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 7,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 1,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": false,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 3,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 3,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 12,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": true,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 2,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 1,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 2,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 15,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 5,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 10,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 12,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 34,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "No",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 7,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 1,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": false,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 2,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "None",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 1,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 5,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 0,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 2,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 4,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 4,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 14,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 4,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 8,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 12,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 26,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "set_number": 1,[0m
+flutter: [38;5;12m│ 💡     "time": 1710561840,[0m
+flutter: [38;5;12m│ 💡     "videos": [[0m
+flutter: [38;5;12m│ 💡       {[0m
+flutter: [38;5;12m│ 💡         "key": "QTJzULWZ6Lg",[0m
+flutter: [38;5;12m│ 💡         "type": "youtube"[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     ],[0m
+flutter: [38;5;12m│ 💡     "winning_alliance": "blue"[0m
+flutter: [38;5;12m│ 💡   },[0m
+flutter: [38;5;12m│ 💡   {[0m
+flutter: [38;5;12m│ 💡     "actual_time": 1710566090,[0m
+flutter: [38;5;12m│ 💡     "alliances": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 43,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc9411",[0m
+flutter: [38;5;12m│ 💡           "frc4788",[0m
+flutter: [38;5;12m│ 💡           "frc5564"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 52,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc7433",[0m
+flutter: [38;5;12m│ 💡           "frc9574",[0m
+flutter: [38;5;12m│ 💡           "frc4729"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "comp_level": "qm",[0m
+flutter: [38;5;12m│ 💡     "event_key": "2024ausc",[0m
+flutter: [38;5;12m│ 💡     "key": "2024ausc_qm42",[0m
+flutter: [38;5;12m│ 💡     "match_number": 42,[0m
+flutter: [38;5;12m│ 💡     "post_result_time": 1710566332,[0m
+flutter: [38;5;12m│ 💡     "predicted_time": 1710566007,[0m
+flutter: [38;5;12m│ 💡     "score_breakdown": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "No",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 12,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 2,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 10,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 10,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": false,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 3,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 2,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "StageRight",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 1,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": true,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 0,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 2,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 4,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 4,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 31,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 4,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 20,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 1,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 26,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 43,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 4,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 19,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 3,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 15,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 15,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": false,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 3,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 3,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": true,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 12,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 3,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 2,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 21,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 8,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 16,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 18,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 52,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "set_number": 1,[0m
+flutter: [38;5;12m│ 💡     "time": 1710564240,[0m
+flutter: [38;5;12m│ 💡     "videos": [[0m
+flutter: [38;5;12m│ 💡       {[0m
+flutter: [38;5;12m│ 💡         "key": "JIXL0ZMiOwo",[0m
+flutter: [38;5;12m│ 💡         "type": "youtube"[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     ],[0m
+flutter: [38;5;12m│ 💡     "winning_alliance": "red"[0m
+flutter: [38;5;12m│ 💡   },[0m
+flutter: [38;5;12m│ 💡   {[0m
+flutter: [38;5;12m│ 💡     "actual_time": 1710569287,[0m
+flutter: [38;5;12m│ 💡     "alliances": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 30,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc6083",[0m
+flutter: [38;5;12m│ 💡           "frc9715",[0m
+flutter: [38;5;12m│ 💡           "frc7128"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 64,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc9599",[0m
+flutter: [38;5;12m│ 💡           "frc6191",[0m
+flutter: [38;5;12m│ 💡           "frc4788"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "comp_level": "qm",[0m
+flutter: [38;5;12m│ 💡     "event_key": "2024ausc",[0m
+flutter: [38;5;12m│ 💡     "key": "2024ausc_qm48",[0m
+flutter: [38;5;12m│ 💡     "match_number": 48,[0m
+flutter: [38;5;12m│ 💡     "post_result_time": 1710569506,[0m
+flutter: [38;5;12m│ 💡     "predicted_time": 1710569437,[0m
+flutter: [38;5;12m│ 💡     "score_breakdown": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "No",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 7,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 1,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": false,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 3,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 1,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "None",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "StageLeft",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 1,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": true,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 0,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 1,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 23,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 9,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 18,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 18,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 30,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 17,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 3,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 15,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 15,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": false,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 3,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 2,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "StageRight",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 5,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": true,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": true,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 3,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 4,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 4,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 42,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 3,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 15,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 9,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 18,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 37,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 64,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "set_number": 1,[0m
+flutter: [38;5;12m│ 💡     "time": 1710567120,[0m
+flutter: [38;5;12m│ 💡     "videos": [[0m
+flutter: [38;5;12m│ 💡       {[0m
+flutter: [38;5;12m│ 💡         "key": "NM1hcAJto4k",[0m
+flutter: [38;5;12m│ 💡         "type": "youtube"[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     ],[0m
+flutter: [38;5;12m│ 💡     "winning_alliance": "red"[0m
+flutter: [38;5;12m│ 💡   },[0m
+flutter: [38;5;12m│ 💡   {[0m
+flutter: [38;5;12m│ 💡     "actual_time": 1710626501,[0m
+flutter: [38;5;12m│ 💡     "alliances": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 49,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc4788",[0m
+flutter: [38;5;12m│ 💡           "frc6432",[0m
+flutter: [38;5;12m│ 💡           "frc4537"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 38,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc4739",[0m
+flutter: [38;5;12m│ 💡           "frc4253",[0m
+flutter: [38;5;12m│ 💡           "frc7738"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "comp_level": "qm",[0m
+flutter: [38;5;12m│ 💡     "event_key": "2024ausc",[0m
+flutter: [38;5;12m│ 💡     "key": "2024ausc_qm58",[0m
+flutter: [38;5;12m│ 💡     "match_number": 58,[0m
+flutter: [38;5;12m│ 💡     "post_result_time": 1710626769,[0m
+flutter: [38;5;12m│ 💡     "predicted_time": 1710627032,[0m
+flutter: [38;5;12m│ 💡     "score_breakdown": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 4,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "No",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 9,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 1,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": false,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 3,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 3,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": true,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 20,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 3,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 5,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 20,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 2,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 10,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 1,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 17,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 49,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 4,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 9,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 1,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": false,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 1,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "None",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "None",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 1,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": true,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 0,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 4,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 6,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 6,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 29,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 4,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 20,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 1,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 28,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 38,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "set_number": 1,[0m
+flutter: [38;5;12m│ 💡     "time": 1710626340,[0m
+flutter: [38;5;12m│ 💡     "videos": [[0m
+flutter: [38;5;12m│ 💡       {[0m
+flutter: [38;5;12m│ 💡         "key": "F9ypS3qC0-o",[0m
+flutter: [38;5;12m│ 💡         "type": "youtube"[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     ],[0m
+flutter: [38;5;12m│ 💡     "winning_alliance": "blue"[0m
+flutter: [38;5;12m│ 💡   },[0m
+flutter: [38;5;12m│ 💡   {[0m
+flutter: [38;5;12m│ 💡     "actual_time": 1710632296,[0m
+flutter: [38;5;12m│ 💡     "alliances": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 53,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc5331",[0m
+flutter: [38;5;12m│ 💡           "frc6510",[0m
+flutter: [38;5;12m│ 💡           "frc6476"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 46,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc7561",[0m
+flutter: [38;5;12m│ 💡           "frc4788",[0m
+flutter: [38;5;12m│ 💡           "frc7497"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "comp_level": "qm",[0m
+flutter: [38;5;12m│ 💡     "event_key": "2024ausc",[0m
+flutter: [38;5;12m│ 💡     "key": "2024ausc_qm69",[0m
+flutter: [38;5;12m│ 💡     "match_number": 69,[0m
+flutter: [38;5;12m│ 💡     "post_result_time": 1710632488,[0m
+flutter: [38;5;12m│ 💡     "predicted_time": 1710632435,[0m
+flutter: [38;5;12m│ 💡     "score_breakdown": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 4,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "No",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 19,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 3,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 15,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 15,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": false,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 2,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "None",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": true,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 3,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 1,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 4,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 4,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 34,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 2,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 10,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 9,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 18,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 32,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 53,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 4,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 24,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 4,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 20,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 20,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": false,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 3,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "None",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "StageRight",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "None",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 3,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 5,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 0,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 4,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 4,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 17,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 2,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 10,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 14,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 46,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "set_number": 1,[0m
+flutter: [38;5;12m│ 💡     "time": 1710632280,[0m
+flutter: [38;5;12m│ 💡     "videos": [[0m
+flutter: [38;5;12m│ 💡       {[0m
+flutter: [38;5;12m│ 💡         "key": "sFNPxgumFr0",[0m
+flutter: [38;5;12m│ 💡         "type": "youtube"[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     ],[0m
+flutter: [38;5;12m│ 💡     "winning_alliance": "blue"[0m
+flutter: [38;5;12m│ 💡   },[0m
+flutter: [38;5;12m│ 💡   {[0m
+flutter: [38;5;12m│ 💡     "actual_time": 1710636065,[0m
+flutter: [38;5;12m│ 💡     "alliances": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 14,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc5648",[0m
+flutter: [38;5;12m│ 💡           "frc9587",[0m
+flutter: [38;5;12m│ 💡           "frc9189"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 53,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc7583",[0m
+flutter: [38;5;12m│ 💡           "frc5876",[0m
+flutter: [38;5;12m│ 💡           "frc4788"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "comp_level": "qm",[0m
+flutter: [38;5;12m│ 💡     "event_key": "2024ausc",[0m
+flutter: [38;5;12m│ 💡     "key": "2024ausc_qm76",[0m
+flutter: [38;5;12m│ 💡     "match_number": 76,[0m
+flutter: [38;5;12m│ 💡     "post_result_time": 1710636427,[0m
+flutter: [38;5;12m│ 💡     "predicted_time": 1710636280,[0m
+flutter: [38;5;12m│ 💡     "score_breakdown": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 2,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": false,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 3,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 2,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "StageLeft",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 5,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 0,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 2,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 7,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 1,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 14,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 4,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 9,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 1,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": true,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": true,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 6,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 1,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "StageLeft",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "StageRight",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 7,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 10,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": true,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 2,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 1,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 6,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 6,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 34,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 3,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 15,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 3,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 6,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 27,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 53,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "set_number": 1,[0m
+flutter: [38;5;12m│ 💡     "time": 1710636060,[0m
+flutter: [38;5;12m│ 💡     "videos": [[0m
+flutter: [38;5;12m│ 💡       {[0m
+flutter: [38;5;12m│ 💡         "key": "u8XnOHiCxCQ",[0m
+flutter: [38;5;12m│ 💡         "type": "youtube"[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     ],[0m
+flutter: [38;5;12m│ 💡     "winning_alliance": "red"[0m
+flutter: [38;5;12m│ 💡   },[0m
+flutter: [38;5;12m│ 💡   {[0m
+flutter: [38;5;12m│ 💡     "actual_time": 1710645175,[0m
+flutter: [38;5;12m│ 💡     "alliances": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 70,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc4788",[0m
+flutter: [38;5;12m│ 💡           "frc9599",[0m
+flutter: [38;5;12m│ 💡           "frc6996"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 65,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc7497",[0m
+flutter: [38;5;12m│ 💡           "frc6510",[0m
+flutter: [38;5;12m│ 💡           "frc8814"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "comp_level": "sf",[0m
+flutter: [38;5;12m│ 💡     "event_key": "2024ausc",[0m
+flutter: [38;5;12m│ 💡     "key": "2024ausc_sf3m1",[0m
+flutter: [38;5;12m│ 💡     "match_number": 1,[0m
+flutter: [38;5;12m│ 💡     "post_result_time": 1710645491,[0m
+flutter: [38;5;12m│ 💡     "predicted_time": 1710645467,[0m
+flutter: [38;5;12m│ 💡     "score_breakdown": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 6,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 26,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 4,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 20,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 20,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": false,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 3,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 3,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 5,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 0,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 6,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 6,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 39,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 4,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 20,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 5,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 10,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 36,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 70,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 6,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 16,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 2,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 10,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 10,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": false,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 3,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 1,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "StageRight",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "None",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 4,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 0,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 1,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 4,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 4,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 49,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 3,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 15,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 13,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 26,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 45,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 65,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "set_number": 3,[0m
+flutter: [38;5;12m│ 💡     "time": 1710643680,[0m
+flutter: [38;5;12m│ 💡     "videos": [[0m
+flutter: [38;5;12m│ 💡       {[0m
+flutter: [38;5;12m│ 💡         "key": "rVlgM8YOhvM",[0m
+flutter: [38;5;12m│ 💡         "type": "youtube"[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     ],[0m
+flutter: [38;5;12m│ 💡     "winning_alliance": "blue"[0m
+flutter: [38;5;12m│ 💡   },[0m
+flutter: [38;5;12m│ 💡   {[0m
+flutter: [38;5;12m│ 💡     "actual_time": 1710648100,[0m
+flutter: [38;5;12m│ 💡     "alliances": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 52,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc8503",[0m
+flutter: [38;5;12m│ 💡           "frc3132",[0m
+flutter: [38;5;12m│ 💡           "frc5876"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 66,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc6996",[0m
+flutter: [38;5;12m│ 💡           "frc9599",[0m
+flutter: [38;5;12m│ 💡           "frc4788"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "comp_level": "sf",[0m
+flutter: [38;5;12m│ 💡     "event_key": "2024ausc",[0m
+flutter: [38;5;12m│ 💡     "key": "2024ausc_sf8m1",[0m
+flutter: [38;5;12m│ 💡     "match_number": 1,[0m
+flutter: [38;5;12m│ 💡     "post_result_time": 1710648423,[0m
+flutter: [38;5;12m│ 💡     "predicted_time": 1710648396,[0m
+flutter: [38;5;12m│ 💡     "score_breakdown": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 4,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "No",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 19,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 3,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 15,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 15,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": false,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 3,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 2,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "StageRight",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 2,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 0,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 1,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 7,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 7,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 31,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 3,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 15,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 2,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 4,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 26,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 52,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 4,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 24,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 4,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 20,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 20,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": false,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 3,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 3,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 1,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 5,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": true,[0m
+flutter: [38;5;12m│ 💡         "rp": 0,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 5,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 37,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 3,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 15,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 7,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 14,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 34,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 66,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "set_number": 8,[0m
+flutter: [38;5;12m│ 💡     "time": 1710646380,[0m
+flutter: [38;5;12m│ 💡     "videos": [[0m
+flutter: [38;5;12m│ 💡       {[0m
+flutter: [38;5;12m│ 💡         "key": "A8RBiCuXlCc",[0m
+flutter: [38;5;12m│ 💡         "type": "youtube"[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     ],[0m
+flutter: [38;5;12m│ 💡     "winning_alliance": "red"[0m
+flutter: [38;5;12m│ 💡   },[0m
+flutter: [38;5;12m│ 💡   {[0m
+flutter: [38;5;12m│ 💡     "actual_time": 1710650270,[0m
+flutter: [38;5;12m│ 💡     "alliances": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 50,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc6996",[0m
+flutter: [38;5;12m│ 💡           "frc9599",[0m
+flutter: [38;5;12m│ 💡           "frc4788"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 103,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc5985",[0m
+flutter: [38;5;12m│ 💡           "frc8011",[0m
+flutter: [38;5;12m│ 💡           "frc4613"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "comp_level": "sf",[0m
+flutter: [38;5;12m│ 💡     "event_key": "2024ausc",[0m
+flutter: [38;5;12m│ 💡     "key": "2024ausc_sf11m1",[0m
+flutter: [38;5;12m│ 💡     "match_number": 1,[0m
+flutter: [38;5;12m│ 💡     "post_result_time": 1710650514,[0m
+flutter: [38;5;12m│ 💡     "predicted_time": 1710650414,[0m
+flutter: [38;5;12m│ 💡     "score_breakdown": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 6,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 26,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 4,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 20,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 20,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": false,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 1,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "None",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "None",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 1,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 10,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 0,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 1,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 1,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 1,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 14,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 6,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 12,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 13,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 50,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 4,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 39,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 7,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 35,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 35,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": false,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 2,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 6,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 1,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "StageLeft",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "StageLeft",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 9,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 5,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": true,[0m
+flutter: [38;5;12m│ 💡         "rp": 0,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 2,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 6,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 6,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 59,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 6,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 30,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 7,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 14,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 50,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 103,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "set_number": 11,[0m
+flutter: [38;5;12m│ 💡     "time": 1710648180,[0m
+flutter: [38;5;12m│ 💡     "videos": [[0m
+flutter: [38;5;12m│ 💡       {[0m
+flutter: [38;5;12m│ 💡         "key": "aajwLEa7dBc",[0m
+flutter: [38;5;12m│ 💡         "type": "youtube"[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     ],[0m
+flutter: [38;5;12m│ 💡     "winning_alliance": "red"[0m
+flutter: [38;5;12m│ 💡   },[0m
+flutter: [38;5;12m│ 💡   {[0m
+flutter: [38;5;12m│ 💡     "actual_time": 1710652124,[0m
+flutter: [38;5;12m│ 💡     "alliances": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 83,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc4253",[0m
+flutter: [38;5;12m│ 💡           "frc6434",[0m
+flutter: [38;5;12m│ 💡           "frc5584"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "dq_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "score": 68,[0m
+flutter: [38;5;12m│ 💡         "surrogate_team_keys": [],[0m
+flutter: [38;5;12m│ 💡         "team_keys": [[0m
+flutter: [38;5;12m│ 💡           "frc6996",[0m
+flutter: [38;5;12m│ 💡           "frc9599",[0m
+flutter: [38;5;12m│ 💡           "frc4788"[0m
+flutter: [38;5;12m│ 💡         ][0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "comp_level": "sf",[0m
+flutter: [38;5;12m│ 💡     "event_key": "2024ausc",[0m
+flutter: [38;5;12m│ 💡     "key": "2024ausc_sf13m1",[0m
+flutter: [38;5;12m│ 💡     "match_number": 1,[0m
+flutter: [38;5;12m│ 💡     "post_result_time": 1710652326,[0m
+flutter: [38;5;12m│ 💡     "predicted_time": 1710652184,[0m
+flutter: [38;5;12m│ 💡     "score_breakdown": {[0m
+flutter: [38;5;12m│ 💡       "blue": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 4,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 29,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 5,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 25,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 25,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": false,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 2,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "None",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 10,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 0,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 7,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 7,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 44,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 5,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 25,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 5,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 10,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 42,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 83,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       "red": {[0m
+flutter: [38;5;12m│ 💡         "adjustPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNoteCount": 0,[0m
+flutter: [38;5;12m│ 💡         "autoAmpNotePoints": 0,[0m
+flutter: [38;5;12m│ 💡         "autoLeavePoints": 4,[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot1": "No",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot2": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoLineRobot3": "Yes",[0m
+flutter: [38;5;12m│ 💡         "autoPoints": 14,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNoteCount": 2,[0m
+flutter: [38;5;12m│ 💡         "autoSpeakerNotePoints": 10,[0m
+flutter: [38;5;12m│ 💡         "autoTotalNotePoints": 10,[0m
+flutter: [38;5;12m│ 💡         "coopNotePlayed": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "coopertitionCriteriaMet": false,[0m
+flutter: [38;5;12m│ 💡         "endGameHarmonyPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameNoteInTrapPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameOnStagePoints": 3,[0m
+flutter: [38;5;12m│ 💡         "endGameParkPoints": 2,[0m
+flutter: [38;5;12m│ 💡         "endGameRobot1": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot2": "Parked",[0m
+flutter: [38;5;12m│ 💡         "endGameRobot3": "CenterStage",[0m
+flutter: [38;5;12m│ 💡         "endGameSpotLightBonusPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "endGameTotalStagePoints": 5,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusOnStageRobotsThreshold": 2,[0m
+flutter: [38;5;12m│ 💡         "ensembleBonusStagePointsThreshold": 10,[0m
+flutter: [38;5;12m│ 💡         "foulCount": 0,[0m
+flutter: [38;5;12m│ 💡         "foulPoints": 0,[0m
+flutter: [38;5;12m│ 💡         "g206Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g408Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "g424Penalty": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusAchieved": false,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThreshold": 18,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdCoop": 15,[0m
+flutter: [38;5;12m│ 💡         "melodyBonusThresholdNonCoop": 18,[0m
+flutter: [38;5;12m│ 💡         "micCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "micStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "micStageRight": false,[0m
+flutter: [38;5;12m│ 💡         "rp": 0,[0m
+flutter: [38;5;12m│ 💡         "techFoulCount": 2,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNoteCount": 6,[0m
+flutter: [38;5;12m│ 💡         "teleopAmpNotePoints": 6,[0m
+flutter: [38;5;12m│ 💡         "teleopPoints": 54,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedCount": 7,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteAmplifiedPoints": 35,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNoteCount": 4,[0m
+flutter: [38;5;12m│ 💡         "teleopSpeakerNotePoints": 8,[0m
+flutter: [38;5;12m│ 💡         "teleopTotalNotePoints": 49,[0m
+flutter: [38;5;12m│ 💡         "totalPoints": 68,[0m
+flutter: [38;5;12m│ 💡         "trapCenterStage": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageLeft": false,[0m
+flutter: [38;5;12m│ 💡         "trapStageRight": false[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     },[0m
+flutter: [38;5;12m│ 💡     "set_number": 13,[0m
+flutter: [38;5;12m│ 💡     "time": 1710649980,[0m
+flutter: [38;5;12m│ 💡     "videos": [[0m
+flutter: [38;5;12m│ 💡       {[0m
+flutter: [38;5;12m│ 💡         "key": "7g_Mew3XlgY",[0m
+flutter: [38;5;12m│ 💡         "type": "youtube"[0m
+flutter: [38;5;12m│ 💡       },[0m
+flutter: [38;5;12m│ 💡       {[0m
+flutter: [38;5;12m│ 💡         "key": "hwh0z4Pifh4",[0m
+flutter: [38;5;12m│ 💡         "type": "youtube"[0m
+flutter: [38;5;12m│ 💡       }[0m
+flutter: [38;5;12m│ 💡     ],[0m
+flutter: [38;5;12m│ 💡     "winning_alliance": "blue"[0m
+flutter: [38;5;12m│ 💡   }[0m
+flutter: [38;5;12m│ 💡 ][0m
+flutter: [38;5;12m└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+
+Application finished.
