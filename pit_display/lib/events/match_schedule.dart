@@ -71,7 +71,8 @@ class _MatchScheduleState extends State<MatchSchedule>
     with AutomaticKeepAliveClientMixin { // Add state preservation mixin
   
   Logger logger = Logger();
-  final ScrollController _controller = ScrollController();
+  final ScrollController _pastMatchScrollController = ScrollController();
+  final ScrollController _upcomingMatchScrollController = ScrollController();
   List<Match> _matches = [];
   late Timer _apiTimer;
   SharedPreferences? _prefs;
@@ -127,7 +128,10 @@ class _MatchScheduleState extends State<MatchSchedule>
       }
 
       Future.delayed(const Duration(milliseconds: 100),
-        () => _controller.jumpTo(_controller.position.maxScrollExtent));
+        () => _pastMatchScrollController.jumpTo(_pastMatchScrollController.position.minScrollExtent));
+
+      Future.delayed(const Duration(milliseconds: 100),
+        () => _upcomingMatchScrollController.jumpTo(_upcomingMatchScrollController.position.minScrollExtent));
     } catch (err) {
       if (kDebugMode) {
         logger.e('TBA API err: $err');
@@ -139,21 +143,86 @@ class _MatchScheduleState extends State<MatchSchedule>
   @override
   Widget build(BuildContext context) {
     super.build(context);
-  return Padding(
-    padding: const EdgeInsets.all(8.0),
-    child: ListView(
-    controller: _controller,
-    children: [
-      Text("Match Schedule", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
-      if (_matches.isEmpty)
-        Text("No matches available.", style: TextStyle(fontSize: 18, color: Colors.red)),
-      for (Match match in _matches)
-        (match is FinishedMatch)
-          ? _finishedMatchTile(match, context)
-          : _upcomingMatchTile(match as UpcomingMatch, context),
-    ],
-    ),
-  );
+    
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Column(
+        children: [
+          Text(
+            "Match Schedule",
+            style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          if (!MatchDataService().hasLoadedOnce)
+            const Padding(
+              padding: EdgeInsets.all(16.0),
+              child: CircularProgressIndicator(),
+            ),
+          if (_matches.isEmpty && !MatchDataService().isLoading)
+            const Text(
+              "No matches available.",
+              style: TextStyle(
+                fontSize: 18,
+                color: Colors.red,
+              ),
+            ),
+          Expanded(
+            child: Row(
+              children: [
+                Expanded(
+                  child: Column(
+                    children: [
+                      Text("Upcoming Matches", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+                      Expanded(
+                        child: Container(
+                          margin:  const EdgeInsets.only(right: 8),
+                          padding: const EdgeInsets.only(top: 8),
+                          child: ListView(
+                            controller: _upcomingMatchScrollController,
+                            children: [
+                              for (Match match in _matches)
+                                if (match is UpcomingMatch)
+                                _upcomingMatchTile(match, context),
+                            ],
+                          ),
+                        )
+                      ),
+                    ],
+                  ),
+                ),
+                Container(    // Vertical divider
+                  width: 2,
+                  color: Colors.black,
+                ),
+                Expanded(
+                  child: Column(
+                    children: [
+                      Text("Past Matches", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+                      Expanded(
+                        child: Container(
+                          margin:  const EdgeInsets.only(left: 8),
+                          padding: const EdgeInsets.only(top: 8),
+                          child: ListView(
+                            controller: _pastMatchScrollController,
+                            children: [
+                              for (Match match in _matches)
+                                if (match is FinishedMatch)
+                                _finishedMatchTile(match, context),
+                            ],
+                          ),
+                        )
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            )
+          ),
+        ],
+      ),
+    );
   }
 
 

@@ -27,7 +27,7 @@ void main() async {
   });
 
   MatchDataService().initialize();
-  
+
   runApp(const PitDisplay());
 }
 
@@ -46,16 +46,16 @@ class PitDisplay extends StatelessWidget {
             title: const Text('4788 Pit Display'),
             bottom: const TabBar(
               tabs: [
-                Tab(text: "Home"),
-                Tab(text: "Stats"),
-                Tab(text: "About"),
+                Tab(text: "Matches"),
+                Tab(text: "Placeholder"),
+                Tab(text: "Autonomous"),
               ],
             ),
           ),
           body: const TabBarView(
             children: [
-              Center(child: Text("Home Page")),
               EventPage(),
+              Center(child: Text("Home Page")),
               Center(child: Text("About Page")),
             ],
           ),
