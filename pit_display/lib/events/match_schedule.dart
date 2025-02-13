@@ -7,7 +7,38 @@ import 'package:pit_display/services/tba_api.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:logger/logger.dart';
 
+class MatchDataService {
+  static final MatchDataService _instance = MatchDataService._internal();
+  factory MatchDataService() => _instance;
+  MatchDataService._internal();
 
+  final MatchScheduleCache _cache = MatchScheduleCache();
+  bool _isLoading = false;
+  bool _hasLoadedOnce = false;
+
+  Future<void> initialize() async {
+    if (_isLoading || _hasLoadedOnce) return;
+    
+    _isLoading = true;
+    try {
+      // Load initial data
+      await _loadData();
+      _hasLoadedOnce = true;
+    } finally {
+      _isLoading = false;
+    }
+  }
+
+  Future<void> _loadData() async {
+    final matches = await TBA.getTeamMatchSchedule();
+    if (matches != null) {
+      _cache.updateCache(matches);
+    }
+  }
+
+  bool get isLoading => _isLoading;
+  bool get hasLoadedOnce => _hasLoadedOnce;
+}
 
 class MatchScheduleCache {
   static final MatchScheduleCache _instance = MatchScheduleCache._internal();
@@ -124,28 +155,6 @@ class _MatchScheduleState extends State<MatchSchedule>
     ),
   );
   }
-
-  // void _getMatchSchedule() {
-  // TBA.getTeamMatchSchedule().then((matches) {
-  //   if (matches == null) {
-  //     logger.e("no matches found in getMatchSchedule");
-  //     setState(() {
-  //       _matches = [];
-  //     });
-  //   } else {
-  //     setState(() {
-  //       _matches = matches;
-  //     });
-  //   }
-
-  //   Future.delayed(const Duration(milliseconds: 100),
-  //     () => _controller.jumpTo(_controller.position.maxScrollExtent));
-  // }).catchError((err) {
-  //   if (kDebugMode) {
-  //     logger.e('TBA API err: $err');
-  //   }
-  // });
-  // }
 
 
   Widget _upcomingMatchTile(UpcomingMatch match, BuildContext context) {

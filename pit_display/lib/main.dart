@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'dart:io';
 import 'package:window_manager/window_manager.dart';
 import 'package:pit_display/pages/event_page.dart';
+import 'package:pit_display/events/match_schedule.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,6 +26,8 @@ void main() async {
     await windowManager.focus();
   });
 
+  MatchDataService().initialize();
+  
   runApp(const PitDisplay());
 }
 
