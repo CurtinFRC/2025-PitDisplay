@@ -169,63 +169,63 @@ class _MatchScheduleState extends State<MatchSchedule>
             ),
           if (_matches.isNotEmpty)
             Text(
-              "Current Match: ${_matches.first.matchNumber}",
+              "Next Match: ${_matches.first.matchNumber}",
               style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
             ),
-          if (_matches.isNotEmpty)
             //TODO: show next match/current match
-          Expanded(
-            child: Row(
-              children: [
-                Expanded(
-                  child: Column(
-                    children: [
-                      Text("Upcoming Matches", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
-                      Expanded(
-                        child: Container(
-                          margin:  const EdgeInsets.only(right: 8),
-                          padding: const EdgeInsets.only(top: 8),
-                          child: ListView(
-                            controller: _upcomingMatchScrollController,
-                            children: [
-                              for (Match match in _matches)
-                                if (match is UpcomingMatch)
-                                _upcomingMatchTile(match, context),
-                            ],
-                          ),
-                        )
-                      ),
-                    ],
+          if (_matches.isNotEmpty)
+            Expanded(
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Text("Upcoming Matches", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+                        Expanded(
+                          child: Container(
+                            margin:  const EdgeInsets.only(right: 8),
+                            padding: const EdgeInsets.only(top: 8),
+                            child: ListView(
+                              controller: _upcomingMatchScrollController,
+                              children: [
+                                for (Match match in _matches)
+                                  if (match is UpcomingMatch)
+                                  _upcomingMatchTile(match, context),
+                              ],
+                            ),
+                          )
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                Container(    // Vertical divider
-                  width: 2,
-                  color: Colors.black,
-                ),
-                Expanded(
-                  child: Column(
-                    children: [
-                      Text("Past Matches", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
-                      Expanded(
-                        child: Container(
-                          margin:  const EdgeInsets.only(left: 8),
-                          padding: const EdgeInsets.only(top: 8),
-                          child: ListView(
-                            controller: _pastMatchScrollController,
-                            children: [
-                              for (Match match in _matches)
-                                if (match is FinishedMatch)
-                                _finishedMatchTile(match, context),
-                            ],
-                          ),
-                        )
-                      ),
-                    ],
+                  Container(    // Vertical divider
+                    width: 2,
+                    color: Colors.black,
                   ),
-                ),
-              ],
-            )
-          ),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Text("Past Matches", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+                        Expanded(
+                          child: Container(
+                            margin:  const EdgeInsets.only(left: 8),
+                            padding: const EdgeInsets.only(top: 8),
+                            child: ListView(
+                              controller: _pastMatchScrollController,
+                              children: [
+                                for (Match match in _matches)
+                                  if (match is FinishedMatch)
+                                  _finishedMatchTile(match, context),
+                              ],
+                            ),
+                          )
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              )
+            ),
         ],
       ),
     );
@@ -272,42 +272,54 @@ class _MatchScheduleState extends State<MatchSchedule>
     }
 
     return Card(
-      child: ListTile(
-        leading: Text(
-          (match.redRP == 0 && match.blueRP == 0)
-            ? match.matchNumber
-            : ((match.weAreRed ?? false)
-              ? '${match.redRP}RP'
-              : '${match.blueRP}RP'),
-          style: TextStyle(color: outcomeColour),
-        ),
-        title: _alliances(match),
-        trailing: SizedBox(
-          width: 110,
-          child: Row(
+      child: Row(
+        children: [
+          Spacer(flex: 1),
+          Text(
+            (match.redRP == 0 && match.blueRP == 0)
+              ? match.matchNumber
+              : ((match.weAreRed ?? false)
+                ? '${match.redRP}RP'
+                : '${match.blueRP}RP'),
+            style: TextStyle(color: outcomeColour),
+          ),
+          Spacer(flex: 2),
+          _alliances(match),
+          Spacer(flex: 4),
+          Column(
             children: [
-              SizedBox(
-              width: 48,
-                child: Center(
-                  child: Text(
-                  match.redScore.toString(),
-                  style: TextStyle(color: AppColours.firstRed),
-                  ),
-                ),
-              ),
-              const Text('-'),
-              SizedBox(
-                width: 48,
-                child: Center(
-                  child: Text(
-                  match.blueScore.toString(),
-                  style: TextStyle(color: AppColours.firstBlue),
-                  ),
-                ),
-              ),
+              Text("Time"),
+              Text(match.actualTime.toString().substring(0, 16)),
             ],
           ),
-        ),
+          Spacer(flex: 4),
+          SizedBox(
+            width: 110,
+            child: Row(
+              children: [
+                SizedBox(
+                width: 48,
+                  child: Center(
+                    child: Text(
+                    match.redScore.toString(),
+                    style: TextStyle(color: AppColours.firstRed),
+                    ),
+                  ),
+                ),
+                const Text('-'),
+                SizedBox(
+                  width: 48,
+                  child: Center(
+                    child: Text(
+                    match.blueScore.toString(),
+                    style: TextStyle(color: AppColours.firstBlue),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -370,13 +382,13 @@ class _MatchScheduleState extends State<MatchSchedule>
                 SizedBox(
                   width: 48,
                   child: Center(
-                  child: _teamNumber(match.redTeams[1], AppColours.firstBlue),
+                  child: _teamNumber(match.blueTeams[1], AppColours.firstBlue),
                   ),
                 ),
                 SizedBox(
                   width: 48,
                   child: Center(
-                  child: _teamNumber(match.redTeams[2], AppColours.firstBlue),
+                  child: _teamNumber(match.blueTeams[2], AppColours.firstBlue),
                   ),
                 ),
               ],

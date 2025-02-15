@@ -142,6 +142,8 @@ class TBA {
           redRP: (matchJson['score_breakdown']['red']['rp'] as num).toInt(),
           blueRP: (matchJson['score_breakdown']['blue']['rp'] as num).toInt(),
           weAreRed: redTeams.contains(team),
+          actualTime: DateTime.fromMillisecondsSinceEpoch(
+              (matchJson['predicted_time'] as num).toInt() * 1000),
         ));
       } else {
         matches.add(UpcomingMatch(
@@ -174,24 +176,9 @@ class TBA {
 
     List<dynamic> responseLst = jsonDecode(response.body);
     List<Map<String, dynamic>> responseJson = responseLst.cast();
-    responseJson.sort((a, b) {
-      return (a['predicted_time'] as num)
-          .compareTo((b['predicted_time'] as num));
-    });
-
-    int prevMatchIdx = responseJson.length - 4;
-    for (int i = prevMatchIdx; i >= 0; i--) {
-      if (responseJson[i]['actual_time'] != null) {
-        prevMatchIdx = i;
-        break;
-      }
-    }
 
     List<Match> matches = [];
-    for (int i = prevMatchIdx; i < prevMatchIdx + 4; i++) {
-      if (i >= responseJson.length) {
-        break;
-      }
+    for (int i = 0; i < responseJson.length; i++) {
 
       Map<String, dynamic> matchJson = responseJson[i];
 
@@ -203,13 +190,13 @@ class TBA {
 
       String matchNum = matchJson['match_number'].toString();
       if (compLevel != 'Q') {
-        matchNum += '-${matchJson['set_number']}';
+        matchNum += '-${matchJson['set_number']}';    // adds set number to non qualifying matches
       }
 
       List<String> redTeamsStr =
           (matchJson['alliances']['red']['team_keys'] as List<dynamic>).cast();
       List<int> redTeams = redTeamsStr
-          .map((teamStr) => int.parse(teamStr.substring(3)))
+          .map((teamStr) => int.parse(teamStr.substring(3)))    // removes the 'frc' from the team number
           .toList();
       List<String> blueTeamsStr =
           (matchJson['alliances']['blue']['team_keys'] as List<dynamic>).cast();
@@ -217,7 +204,7 @@ class TBA {
           .map((teamStr) => int.parse(teamStr.substring(3)))
           .toList();
 
-      if (matchJson['actual_time'] != null) {
+      if (matchJson['actual_time'] != null) {   // if the match has already happened
         Outcome outcome = Outcome.tie;
         if (matchJson['winning_alliance'] == 'red') {
           outcome = Outcome.redWin;
@@ -234,6 +221,8 @@ class TBA {
           blueScore: (matchJson['alliances']['blue']['score'] as num).toInt(),
           redRP: (matchJson['score_breakdown']['red']['rp'] as num).toInt(),
           blueRP: (matchJson['score_breakdown']['blue']['rp'] as num).toInt(),
+          actualTime: DateTime.fromMillisecondsSinceEpoch(
+              (matchJson['predicted_time'] as num).toInt() * 1000),
         ));
       } else {
         matches.add(UpcomingMatch(

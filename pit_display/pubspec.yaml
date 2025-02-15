@@ -41,6 +41,7 @@ dependencies:
   http: ^1.2.2
   shared_preferences: ^2.3.5
   window_manager: ^0.4.3
+  tuple: ^2.0.2
 
 dev_dependencies:
   flutter_test:

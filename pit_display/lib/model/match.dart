@@ -38,6 +38,7 @@ class FinishedMatch extends Match {
   final int blueScore;
   final int redRP;     // RP = Ranking Points
   final int blueRP;
+  final DateTime actualTime;
 
   const FinishedMatch({
     required super.matchNumber,
@@ -48,6 +49,7 @@ class FinishedMatch extends Match {
     required this.blueScore,
     required this.redRP,
     required this.blueRP,
+    required this.actualTime,
     super.weAreRed,
   });
 }
