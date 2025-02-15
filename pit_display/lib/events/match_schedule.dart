@@ -6,6 +6,9 @@ import 'package:pit_display/model/match.dart';
 import 'package:pit_display/services/tba_api.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:logger/logger.dart';
+import 'package:pit_display/styles/colours.dart';
+
+//TODO: use shared preferences to get team number and then highlight that team in the match schedule
 
 class MatchDataService {
   static final MatchDataService _instance = MatchDataService._internal();
@@ -148,17 +151,13 @@ class _MatchScheduleState extends State<MatchSchedule>
       padding: const EdgeInsets.all(8.0),
       child: Column(
         children: [
-          Text(
-            "Match Schedule",
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
           if (!MatchDataService().hasLoadedOnce)
-            const Padding(
-              padding: EdgeInsets.all(16.0),
-              child: CircularProgressIndicator(),
+            Container(
+              alignment: Alignment.center,
+              child: const Padding(
+                padding: EdgeInsets.all(16.0),
+                child: CircularProgressIndicator(),
+              ),
             ),
           if (_matches.isEmpty && !MatchDataService().isLoading)
             const Text(
@@ -168,6 +167,13 @@ class _MatchScheduleState extends State<MatchSchedule>
                 color: Colors.red,
               ),
             ),
+          if (_matches.isNotEmpty)
+            Text(
+              "Current Match: ${_matches.first.matchNumber}",
+              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+            ),
+          if (_matches.isNotEmpty)
+            //TODO: show next match/current match
           Expanded(
             child: Row(
               children: [
@@ -227,186 +233,157 @@ class _MatchScheduleState extends State<MatchSchedule>
 
 
   Widget _upcomingMatchTile(UpcomingMatch match, BuildContext context) {
-    ColorScheme colorScheme = Theme.of(context).colorScheme;
     int etaMinutes =
       (match.estimatedStartTime.difference(DateTime.now()).inSeconds / 60)
         .round();
 
     return Card(
       color: (match.weAreRed ?? false)
-        ? colorScheme.errorContainer
-        : colorScheme.primaryContainer,
+        ? AppColours.firstRed
+        : AppColours.firstBlue,
       child: ListTile(
-      leading: Text(match.matchNumber),
-      title: Row(
-        children: [
-        SizedBox(
-          width: 48,
+        leading: Text(match.matchNumber),
+        title: _alliances(match),
+        trailing: SizedBox(
+          width: 110,
           child: Center(
-          child: _teamNumber(match.redTeams[0], colorScheme.error),
+          child: etaMinutes <= 3
+            ? const Text('<3m')
+            : Text(etaMinutes < 60
+              ? '~${etaMinutes}m'
+              : '~${(etaMinutes / 60).floor()}:${(etaMinutes % 60).toString().padLeft(2, '0')}'),
           ),
         ),
-        SizedBox(
-          width: 48,
-          child: Center(
-          child: _teamNumber(match.redTeams[1], colorScheme.error),
-          ),
-        ),
-        SizedBox(
-          width: 48,
-          child: Center(
-          child: _teamNumber(match.redTeams[2], colorScheme.error),
-          ),
-        ),
-        const SizedBox(width: 16),
-        SizedBox(
-          width: 48,
-          child: Center(
-          child: _teamNumber(match.blueTeams[0], colorScheme.primary),
-          ),
-        ),
-        SizedBox(
-          width: 48,
-          child: Center(
-          child: _teamNumber(match.blueTeams[1], colorScheme.primary),
-          ),
-        ),
-        SizedBox(
-          width: 48,
-          child: Center(
-          child: _teamNumber(match.blueTeams[2], colorScheme.primary),
-          ),
-        ),
-        SizedBox(
-          width: 600,
-          child: Center(
-          child: Text(
-            'Statbotics Prediction: Win Percent: ${((match.weAreRed != null) ? (match.weAreRed! ? match.statboticsPred.toString() : 100 - match.statboticsPred) : "Statbotics Err")}',
-            textScaler: const TextScaler.linear(0.5),
-          ),
-          ),
-        ),
-        ],
-      ),
-      trailing: SizedBox(
-        width: 110,
-        child: Center(
-        child: etaMinutes <= 3
-          ? const Text('<3m')
-          : Text(etaMinutes < 60
-            ? '~${etaMinutes}m'
-            : '~${(etaMinutes / 60).floor()}:${(etaMinutes % 60).toString().padLeft(2, '0')}'),
-        ),
-      ),
       ),
     );
   }
 
   Widget _finishedMatchTile(FinishedMatch match, BuildContext context) {
-    ColorScheme colorScheme = Theme.of(context).colorScheme;
-    Color? outcomeColor;
+    Color? outcomeColour;
     if (match.outcome != Outcome.tie) {
       if (match.outcome == Outcome.redWin && (match.weAreRed ?? false)) {
-      outcomeColor = Colors.green;
+      outcomeColour = Colors.green;
       } else if (match.outcome == Outcome.blueWin &&
         !(match.weAreRed ?? false)) {
-      outcomeColor = Colors.green;
+      outcomeColour = Colors.green;
       } else {
-      outcomeColor = Colors.red;
+      outcomeColour = Colors.red;
       }
     }
 
     return Card(
       child: ListTile(
-      leading: Text(
-        (match.redRP == 0 && match.blueRP == 0)
-          ? match.matchNumber
-          : ((match.weAreRed ?? false)
-            ? '${match.redRP}RP'
-            : '${match.blueRP}RP'),
-        style: TextStyle(color: outcomeColor),
-      ),
-      title: Row(
-        children: [
-        SizedBox(
-          width: 48,
-          child: Center(
-          child: _teamNumber(match.redTeams[0], colorScheme.error),
+        leading: Text(
+          (match.redRP == 0 && match.blueRP == 0)
+            ? match.matchNumber
+            : ((match.weAreRed ?? false)
+              ? '${match.redRP}RP'
+              : '${match.blueRP}RP'),
+          style: TextStyle(color: outcomeColour),
+        ),
+        title: _alliances(match),
+        trailing: SizedBox(
+          width: 110,
+          child: Row(
+            children: [
+              SizedBox(
+              width: 48,
+                child: Center(
+                  child: Text(
+                  match.redScore.toString(),
+                  style: TextStyle(color: AppColours.firstRed),
+                  ),
+                ),
+              ),
+              const Text('-'),
+              SizedBox(
+                width: 48,
+                child: Center(
+                  child: Text(
+                  match.blueScore.toString(),
+                  style: TextStyle(color: AppColours.firstBlue),
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
-        SizedBox(
-          width: 48,
-          child: Center(
-          child: _teamNumber(match.redTeams[1], colorScheme.error),
-          ),
-        ),
-        SizedBox(
-          width: 48,
-          child: Center(
-          child: _teamNumber(match.redTeams[2], colorScheme.error),
-          ),
-        ),
-        const SizedBox(width: 16),
-        SizedBox(
-          width: 48,
-          child: Center(
-          child: _teamNumber(match.blueTeams[0], colorScheme.primary),
-          ),
-        ),
-        SizedBox(
-          width: 48,
-          child: Center(
-          child: _teamNumber(match.blueTeams[1], colorScheme.primary),
-          ),
-        ),
-        SizedBox(
-          width: 48,
-          child: Center(
-          child: _teamNumber(match.blueTeams[2], colorScheme.primary),
-          ),
-        ),
-        ],
-      ),
-      trailing: SizedBox(
-        width: 110,
-        child: Row(
-        children: [
-          SizedBox(
-          width: 48,
-          child: Center(
-            child: Text(
-            match.redScore.toString(),
-            style: TextStyle(color: colorScheme.error),
-            ),
-          ),
-          ),
-          const Text('-'),
-          SizedBox(
-          width: 48,
-          child: Center(
-            child: Text(
-            match.blueScore.toString(),
-            style: TextStyle(color: colorScheme.primary),
-            ),
-          ),
-          ),
-        ],
-        ),
-      ),
       ),
     );
   }
 
 
-  Widget _teamNumber(int team, Color color) {
-  return Text(
-    team.toString(),
-    style: TextStyle(
-    color: color,
-    decoration: (team == _prefs?.getInt('teamNumber'))
-      ? TextDecoration.underline
-      : null,
-    ),
-  );
+  Widget _teamNumber(int team, Color colour) {
+    return Text(
+      team.toString(),
+      style: TextStyle(
+        color: colour,
+        decoration: (team == _prefs?.getInt('teamNumber'))
+          ? TextDecoration.underline
+          : null,
+      ),
+    );
+  }
+
+  Widget _alliances(Match match) {
+    return Row(
+      children: [
+        Column(
+          children: [
+            Text("Red Alliance"),
+            Row (
+              children: [
+                SizedBox(
+                  width: 48,
+                  child: Center(
+                  child: _teamNumber(match.redTeams[0], AppColours.firstRed),
+                  ),
+                ),
+                SizedBox(
+                  width: 48,
+                  child: Center(
+                  child: _teamNumber(match.redTeams[1], AppColours.firstRed),
+                  ),
+                ),
+                SizedBox(
+                  width: 48,
+                  child: Center(
+                  child: _teamNumber(match.redTeams[2], AppColours.firstRed),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+        const SizedBox(width: 16),
+        Column(
+          children: [
+            Text("Blue Alliance"),
+            Row (
+              children: [
+                SizedBox(
+                  width: 48,
+                  child: Center(
+                  child: _teamNumber(match.blueTeams[0], AppColours.firstBlue),
+                  ),
+                ),
+                SizedBox(
+                  width: 48,
+                  child: Center(
+                  child: _teamNumber(match.redTeams[1], AppColours.firstBlue),
+                  ),
+                ),
+                SizedBox(
+                  width: 48,
+                  child: Center(
+                  child: _teamNumber(match.redTeams[2], AppColours.firstBlue),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ],
+    );
   }
 }
