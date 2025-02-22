@@ -7,8 +7,6 @@ import 'package:pit_display/services/tba_api.dart';
 import 'package:logger/logger.dart';
 import 'package:pit_display/widgets/match_tiles.dart';
 
-//TODO: use shared preferences to get team number and then highlight that team in the match schedule
-
 class MatchDataService {
   static final MatchDataService _instance = MatchDataService._internal();
   factory MatchDataService() => _instance;
@@ -156,7 +154,6 @@ class _MatchScheduleState extends State<MatchSchedule>
                 color: Colors.red,
               ),
             ),
-            //TODO: show next match/current match
           nextMatchTile(_matches, context),
           if (_matches.isNotEmpty)
             Expanded(

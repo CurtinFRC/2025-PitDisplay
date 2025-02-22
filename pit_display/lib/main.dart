@@ -4,8 +4,7 @@ import 'package:flutter/material.dart';
 // import 'package:pit_display/services/tba_api.dart';
 import 'dart:io';
 import 'package:window_manager/window_manager.dart';
-import 'package:pit_display/pages/event_page.dart';
-import 'package:pit_display/widgets/match_schedule.dart';
+import 'package:pit_display/pages/match_schedule.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {
@@ -60,7 +59,7 @@ class PitDisplay extends StatelessWidget {
           ),
           body: const TabBarView(
             children: [
-              EventPage(),
+              MatchSchedule(),
               Center(child: Text("Home Page")),
               Center(child: Text("About Page")),
             ],
