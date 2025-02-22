@@ -1,4 +1,4 @@
-import "package:pit_display/events/match_schedule.dart";
+import "package:pit_display/widgets/match_schedule.dart";
 import 'package:flutter/material.dart';
 
 class EventPage extends StatelessWidget {

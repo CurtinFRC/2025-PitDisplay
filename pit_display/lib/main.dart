@@ -5,7 +5,8 @@ import 'package:flutter/material.dart';
 import 'dart:io';
 import 'package:window_manager/window_manager.dart';
 import 'package:pit_display/pages/event_page.dart';
-import 'package:pit_display/events/match_schedule.dart';
+import 'package:pit_display/widgets/match_schedule.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -26,6 +27,10 @@ void main() async {
     await windowManager.focus();
   });
 
+  final SharedPreferences prefs = await SharedPreferences.getInstance();
+  await prefs.setInt('teamNumber', 4788);
+  await prefs.setString('eventKey', '2024ausc');
+
   MatchDataService().initialize();
 
   runApp(const PitDisplay());
@@ -38,6 +43,7 @@ class PitDisplay extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: DefaultTabController(
         length: 3, // Number of tabs
         child: Scaffold(
