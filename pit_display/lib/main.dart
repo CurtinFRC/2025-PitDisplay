@@ -6,6 +6,7 @@ import 'dart:io';
 import 'package:window_manager/window_manager.dart';
 import 'package:pit_display/pages/match_schedule.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:pit_display/pages/auto_paths.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -61,7 +62,7 @@ class PitDisplay extends StatelessWidget {
             children: [
               MatchSchedule(),
               Center(child: Text("Home Page")),
-              Center(child: Text("About Page")),
+              AutoPaths(),
             ],
           ),
         ),

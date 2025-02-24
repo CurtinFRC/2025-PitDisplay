@@ -39,18 +39,6 @@ Widget upcomingMatchTile(UpcomingMatch match, BuildContext context) {
 }
 
 Widget finishedMatchTile(FinishedMatch match, BuildContext context) {
-  Color? outcomeColour;
-  if (match.outcome != Outcome.tie) {
-    if (match.outcome == Outcome.redWin && (match.weAreRed ?? false)) {
-    outcomeColour = Colors.green;
-    } else if (match.outcome == Outcome.blueWin &&
-      !(match.weAreRed ?? false)) {
-    outcomeColour = Colors.green;
-    } else {
-    outcomeColour = Colors.red;
-    }
-  }
-
   return SizedBox(
     height: 60,
       child: Card(
