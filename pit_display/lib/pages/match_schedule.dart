@@ -1,6 +1,4 @@
 import 'dart:async';
-
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:pit_display/model/match.dart';
 import 'package:pit_display/services/tba_api.dart';
@@ -101,31 +99,19 @@ class _MatchScheduleState extends State<MatchSchedule>
   }
 
   Future<void> _getMatchSchedule() async {
-    try {
-      final matches = await TBA.getTeamMatchSchedule();
-      
-      if (matches == null) {
-        logger.e("no matches found in getMatchSchedule");
-        setState(() {
-          _matches = [];
-        });
-      } else {
-        setState(() {
-          _matches = matches;
-        });
-        // Update cache
-        MatchScheduleCache().updateCache(matches);
-      }
-
-      Future.delayed(const Duration(milliseconds: 100),
-        () => _pastMatchScrollController.jumpTo(_pastMatchScrollController.position.minScrollExtent));
-
-      Future.delayed(const Duration(milliseconds: 100),
-        () => _upcomingMatchScrollController.jumpTo(_upcomingMatchScrollController.position.minScrollExtent));
-    } catch (err) {
-      if (kDebugMode) {
-        logger.e('TBA API err: $err');
-      }
+    final matches = await TBA.getTeamMatchSchedule();
+    
+    if (matches == null) {
+      logger.e("no matches found in getMatchSchedule");
+      setState(() {
+        _matches = [];
+      });
+    } else {
+      setState(() {
+        _matches = matches;
+      });
+      // Update cache
+      MatchScheduleCache().updateCache(matches);
     }
   }
 
@@ -133,6 +119,15 @@ class _MatchScheduleState extends State<MatchSchedule>
   @override
   Widget build(BuildContext context) {
     super.build(context);
+    List<UpcomingMatch> upcomingMatches = [];
+    bool hasUpcomingMatches = false;
+    if (_matches.isNotEmpty) {
+      upcomingMatches = _matches.whereType<UpcomingMatch>().toList();
+      if (upcomingMatches.isNotEmpty) {
+        hasUpcomingMatches = true;
+        upcomingMatches.removeAt(0);    // remove the next match as it will be displayed separately
+      }
+    }
     
     return Padding(
       padding: const EdgeInsets.all(8.0),
@@ -154,9 +149,11 @@ class _MatchScheduleState extends State<MatchSchedule>
                 color: Colors.red,
               ),
             ),
-          nextMatchTile(_matches, context),
-          if (_matches.isNotEmpty)
+          if (_matches.isNotEmpty)   
+            if (hasUpcomingMatches)
+              Expanded(flex: 1, child: nextMatchTile(_matches, context)),
             Expanded(
+              flex: 8,
               child: Row(
                 children: [
                   Expanded(
@@ -164,7 +161,7 @@ class _MatchScheduleState extends State<MatchSchedule>
                       children: [
                         Text("Upcoming Matches", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
                         SizedBox(height: 10),
-                        headerTile(),
+                        upcomingHeaderTile(),
                         Expanded(
                           child: Container(
                             margin:  const EdgeInsets.only(right: 8),
@@ -172,8 +169,7 @@ class _MatchScheduleState extends State<MatchSchedule>
                             child: ListView(
                               controller: _upcomingMatchScrollController,
                               children: [
-                                for (Match match in _matches)
-                                  if (match is UpcomingMatch)
+                                for (UpcomingMatch match in upcomingMatches)
                                   upcomingMatchTile(match, context),
                               ],
                             ),
@@ -191,7 +187,7 @@ class _MatchScheduleState extends State<MatchSchedule>
                       children: [
                         Text("Past Matches", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
                         SizedBox(height: 10),
-                        headerTile(),
+                        finishedHeaderTile(),
                         Expanded(
                           child: Container(
                             margin:  const EdgeInsets.only(left: 8),
@@ -199,7 +195,7 @@ class _MatchScheduleState extends State<MatchSchedule>
                             child: ListView(
                               controller: _pastMatchScrollController,
                               children: [
-                                for (Match match in _matches)
+                                for (Match match in _matches.reversed)
                                   if (match is FinishedMatch)
                                   finishedMatchTile(match, context),
                               ],

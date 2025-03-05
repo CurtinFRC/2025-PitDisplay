@@ -28,8 +28,8 @@ void main() async {
   });
 
   final SharedPreferences prefs = await SharedPreferences.getInstance();
-  await prefs.setInt('teamNumber', 4788);
-  await prefs.setString('eventKey', '2024ausc');
+  await prefs.setInt('teamNumber', 6566);
+  await prefs.setString('eventKey', '2025mifer');
 
   MatchDataService().initialize();
 
@@ -45,7 +45,7 @@ class PitDisplay extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: DefaultTabController(
-        length: 3, // Number of tabs
+        length: 2, // Number of tabs
         child: Scaffold(
           appBar: AppBar(
             backgroundColor: Colors.pinkAccent,
@@ -53,16 +53,14 @@ class PitDisplay extends StatelessWidget {
             bottom: const TabBar(
               tabs: [
                 Tab(text: "Matches"),
-                Tab(text: "Placeholder"),
-                Tab(text: "Autonomous"),
+                Tab(text: "Impact"),
               ],
             ),
           ),
-          body: const TabBarView(
+          body: TabBarView(
             children: [
               MatchSchedule(),
-              Center(child: Text("Home Page")),
-              AutoPaths(),
+              Container(color: Colors.white, child: Image(image: AssetImage('assets/impact.png'))),
             ],
           ),
         ),

@@ -1,38 +1,43 @@
 import 'package:flutter/material.dart';
 import 'package:pit_display/model/match.dart';
-// import 'package:logger/logger.dart';
 import 'package:pit_display/styles/colours.dart';
 
 Widget upcomingMatchTile(UpcomingMatch match, BuildContext context) {
+  String estimatedStartTime;
+  if (match.estimatedStartTime.isBefore(DateTime.now())) {
+    estimatedStartTime = "Now";
+  } else {
+    if (match.estimatedStartTime.difference(DateTime.now()).inMinutes < 60) {
+      int minutes = match.estimatedStartTime.difference(DateTime.now()).inMinutes;
+      estimatedStartTime = "~$minutes min";
+    } else {
+    if (match.estimatedStartTime.difference(DateTime.now()).inHours < 2) {
+      int hours = match.estimatedStartTime.difference(DateTime.now()).inHours;
+      int minutes = match.estimatedStartTime.difference(DateTime.now()).inMinutes % 60;
+      estimatedStartTime = "~${hours}h ${minutes.toString().padLeft(2, '0')}m";
+    } else {
+      estimatedStartTime = match.estimatedStartTime.toLocal().toString().substring(0, 16);
+    }
+    }
+  }
 
-  
-  int etaMinutes =
-    (match.estimatedStartTime.difference(DateTime.now()).inSeconds / 60)
-      .round();
-
-  return Card(
-    color: (match.weAreRed ?? false)
-      ? AppColours.firstRed
-      : AppColours.firstBlue,
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(40), // if you need this
-      side: BorderSide(
-        color: Colors.grey.withOpacity(0.2),
-        width: 1,
-      ),
-    ),
-    child: ListTile(
-      leading: Text(match.matchNumber),
-      title: _alliances(match),
-      trailing: SizedBox(
-        width: 110,
-        child: Center(
-        child: etaMinutes <= 3
-          ? const Text('<3m')
-          : Text(etaMinutes < 60
-            ? '~${etaMinutes}m'
-            : '~${(etaMinutes / 60).floor()}:${(etaMinutes % 60).toString().padLeft(2, '0')}'),
-        ),
+  return SizedBox(
+    height: 60,
+    child: Card(
+      child: Row(
+        children: [
+          Spacer(flex: 1),
+          Text(match.matchNumber),
+          Spacer(flex: 1),
+          _alliances(match),
+          Spacer(flex: 2),
+          Text("${match.statboticsPred}%"),
+          Spacer(flex: 2),
+          SizedBox(
+            width: 90,
+            child: Center(child: Text(estimatedStartTime, textAlign: TextAlign.center,)),
+          ),
+        ],
       ),
     ),
   );
@@ -42,15 +47,6 @@ Widget finishedMatchTile(FinishedMatch match, BuildContext context) {
   return SizedBox(
     height: 60,
       child: Card(
-      // shape: RoundedRectangleBorder(     // uncomment this to add border
-      //   side: BorderSide(
-      //     color: (match.weAreRed ?? false)
-      //       ? AppColours.firstRed
-      //       : AppColours.firstBlue,
-      //     width: 2,
-      //   ),
-      //   borderRadius: BorderRadius.circular(10.0),
-      // ),
       child: Row(
         children: [
           Spacer(flex: 1),
@@ -58,7 +54,7 @@ Widget finishedMatchTile(FinishedMatch match, BuildContext context) {
           Spacer(flex: 2),
           _alliances(match),
           Spacer(flex: 4),
-          Text(match.actualTime.toString().substring(0, 16)),
+          Text(match.actualTime.toLocal().toString().substring(0, 16)),
           Spacer(flex: 4),
           SizedBox(
             width: 110,
@@ -103,6 +99,7 @@ Widget finishedMatchTile(FinishedMatch match, BuildContext context) {
 }
 
 Widget nextMatchTile(List<Match> matches, BuildContext context) {
+
   if (matches.isEmpty) {
     return const Card();
   }
@@ -120,36 +117,55 @@ Widget nextMatchTile(List<Match> matches, BuildContext context) {
   }
 
   UpcomingMatch upcomingMatch = matches[upcomingMatchIndex] as UpcomingMatch;
+
+  String estimatedStartTime;
+  if (upcomingMatch.estimatedStartTime.isBefore(DateTime.now())) {
+      estimatedStartTime = "Now";
+  } else {
+    if (upcomingMatch.estimatedStartTime.difference(DateTime.now()).inMinutes < 60) {
+      int minutes = upcomingMatch.estimatedStartTime.difference(DateTime.now()).inMinutes;
+      estimatedStartTime = "~$minutes min";
+    } else {
+      int hours = upcomingMatch.estimatedStartTime.difference(DateTime.now()).inHours;
+      int minutes = upcomingMatch.estimatedStartTime.difference(DateTime.now()).inMinutes % 60;
+      estimatedStartTime = "~${hours}h ${minutes.toString().padLeft(2, '0')}m";
+    }
+  }
+
   return SizedBox(
     height: 60,
     child: Card(
       child: Column (
         children: [
+          Center(child: Text("Next Match", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+          ),
+          Spacer(flex: 3),
           Row (
             children: [
               Spacer(flex: 1),
-              Text("Next Match"),
-              Spacer(flex: 18),
-              Text("Red Alliance"),
-              Spacer(flex: 7),
-              Text("Blue Alliance"),
-              Spacer(flex: 20),
-              Text("Estimated Start Time"),
-              Spacer(flex: 20),
-              Text("StatBotics Pred Red Win %"),
+              Text("Match", style: TextStyle(fontWeight: FontWeight.bold)),
+              Spacer(flex: 10),
+              Text("Red Alliance", style: TextStyle(fontWeight: FontWeight.bold)),
+              Spacer(flex: 3),
+              Text("Blue Alliance", style: TextStyle(fontWeight: FontWeight.bold)),
+              Spacer(flex: 17),
+              Text("Estimated Start Time", style: TextStyle(fontWeight: FontWeight.bold)),
+              Spacer(flex: 10),
+              Text("StatBotics Pred (red win %)", style: TextStyle(fontWeight: FontWeight.bold)),
             ],
           ),
           Spacer(),
           Row(
             children: [
               Spacer(flex: 3),
-              Text(upcomingMatch.matchNumber,),
+              Text(upcomingMatch.matchNumber),
               Spacer(flex: 20),
               _alliances(upcomingMatch),
-              Spacer(flex: 40),
-              Text(upcomingMatch.estimatedStartTime.toString().substring(0, 16)),
-              Spacer(flex: 40),
+              Spacer(flex: 38),
+              Text(estimatedStartTime),
+              Spacer(flex: 34),
               Text("${upcomingMatch.statboticsPred}%"),
+              Spacer(flex: 8)
             ],
           ),
         ]
@@ -158,16 +174,9 @@ Widget nextMatchTile(List<Match> matches, BuildContext context) {
   );
 }
 
-Widget headerTile() {
+Widget finishedHeaderTile() {
   return SizedBox(
-    height: 15,
-    // shape: RoundedRectangleBorder(   // uncomment this to add border
-    //   side: BorderSide(
-    //     color: Colors.black,
-    //     width: 1.5,
-    //   ),
-    //   borderRadius: BorderRadius.circular(10.0),
-    // ),
+    height: 20,
     child: Row(
       children: [
         Spacer(flex: 4),
@@ -186,16 +195,35 @@ Widget headerTile() {
   );
 }
 
+Widget upcomingHeaderTile() {
+  return SizedBox(
+    height: 20,
+    child: Row(
+      children: [
+        Spacer(flex: 1),
+        Text("Match", style: TextStyle(fontWeight: FontWeight.bold)),
+        Spacer(flex: 2),
+        Text("Red Alliance", style: TextStyle(fontWeight: FontWeight.bold)),
+        Spacer(flex: 2),
+        Text("Blue Alliance", style: TextStyle(fontWeight: FontWeight.bold)),
+        Spacer(flex: 1),
+        Text("StatBotics Pred (red win %)", style: TextStyle(fontWeight: FontWeight.bold)),
+        Spacer(flex: 1),
+        Text("ETA", style: TextStyle(fontWeight: FontWeight.bold)),
+        Spacer(flex: 1),
+      ],
+    ),
+  );
+}
 
-Widget _teamNumber(int team, Color colour) {
+
+
+Widget _teamNumber(int team, Color colour, bool weAreRed) {
   return Text(
     team.toString(),
     style: TextStyle(
       color: colour,
-      // decoration: (team == prefs?.getInt('teamNumber'))
-      //   ? TextDecoration.underline
-      //   : null,
-      fontWeight: (team == 4788)
+      fontWeight: (colour == AppColours.firstRed && weAreRed) || (colour == AppColours.firstBlue && !weAreRed)
         ? FontWeight.w800
         : FontWeight.normal,
     ),
@@ -210,19 +238,19 @@ Widget _alliances(Match match) {
           SizedBox(
             width: 48,
             child: Center(
-            child: _teamNumber(match.redTeams[0], AppColours.firstRed),
+            child: _teamNumber(match.redTeams[0], AppColours.firstRed, match.weAreRed ?? false),
             ),
           ),
           SizedBox(
             width: 48,
             child: Center(
-              child: _teamNumber(match.redTeams[1], AppColours.firstRed),
+              child: _teamNumber(match.redTeams[1], AppColours.firstRed, match.weAreRed ?? false),
             ),
           ),
           SizedBox(
             width: 48,
             child: Center(
-            child: _teamNumber(match.redTeams[2], AppColours.firstRed),
+            child: _teamNumber(match.redTeams[2], AppColours.firstRed, match.weAreRed ?? false),
             ),
           ),
         ],
@@ -233,19 +261,19 @@ Widget _alliances(Match match) {
           SizedBox(
             width: 48,
             child: Center(
-            child: _teamNumber(match.blueTeams[0], AppColours.firstBlue),
+            child: _teamNumber(match.blueTeams[0], AppColours.firstBlue, match.weAreRed ?? false),
             ),
           ),
           SizedBox(
             width: 48,
             child: Center(
-            child: _teamNumber(match.blueTeams[1], AppColours.firstBlue),
+            child: _teamNumber(match.blueTeams[1], AppColours.firstBlue, match.weAreRed ?? false),
             ),
           ),
           SizedBox(
             width: 48,
             child: Center(
-            child: _teamNumber(match.blueTeams[2], AppColours.firstBlue),
+            child: _teamNumber(match.blueTeams[2], AppColours.firstBlue, match.weAreRed ?? false),
             ),
           ),
         ],
