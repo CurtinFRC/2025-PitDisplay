@@ -96,7 +96,7 @@ class TBA {
       }
 
       String key = matchJson['key'];
-      int statpred = 0;
+      int? statpred;
       // ignore: unnecessary_null_comparison
       if (key != null) {
         // ignore: non_constant_identifier_names
@@ -109,8 +109,12 @@ class TBA {
         Map<String, dynamic> sb_responseList = jsonDecode(sb_response.body);
         // sb_responseJson = sb_responseList.cast();
 
-        statpred =
-            ((sb_responseList['pred']['red_win_prob'] as num) * 100).toInt();     // gets the probability of the red alliance winning (%)
+        if (sb_responseList['pred'] != null) {
+          statpred =
+              ((sb_responseList['pred']['red_win_prob'] as num) * 100).toInt();     // gets the probability of the red alliance winning (%)
+        } else {
+          statpred = null;
+        }
       }
 
       List<String> redTeamsStr =

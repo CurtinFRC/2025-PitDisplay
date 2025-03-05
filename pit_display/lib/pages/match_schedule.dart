@@ -170,7 +170,7 @@ class _MatchScheduleState extends State<MatchSchedule>
                               controller: _upcomingMatchScrollController,
                               children: [
                                 for (UpcomingMatch match in upcomingMatches)
-                                  upcomingMatchTile(match, context),
+                                  UpcomingMatchTile(match: match, context: context),
                               ],
                             ),
                           )

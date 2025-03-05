@@ -6,7 +6,6 @@ import 'dart:io';
 import 'package:window_manager/window_manager.dart';
 import 'package:pit_display/pages/match_schedule.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:pit_display/pages/auto_paths.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -28,8 +27,8 @@ void main() async {
   });
 
   final SharedPreferences prefs = await SharedPreferences.getInstance();
-  await prefs.setInt('teamNumber', 6566);
-  await prefs.setString('eventKey', '2025mifer');
+  await prefs.setInt('teamNumber', 9026);
+  await prefs.setString('eventKey', '2025tuis');
 
   MatchDataService().initialize();
 

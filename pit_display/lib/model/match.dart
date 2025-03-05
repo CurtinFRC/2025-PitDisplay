@@ -20,7 +20,7 @@ class Match {
 
 class UpcomingMatch extends Match {
   final DateTime estimatedStartTime;
-  final int statboticsPred;
+  final int? statboticsPred;
 
   const UpcomingMatch({
     required super.matchNumber,
