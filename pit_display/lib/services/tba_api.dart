@@ -129,7 +129,7 @@ class TBA {
           .toList();
 
       if (matchJson['actual_time'] != null) {
-        Outcome outcome = Outcome.tie;    // TODO: work out why the outcome is set to a tie by default. what does the api show for a tie?
+        Outcome outcome = Outcome.tie; 
         if (matchJson['winning_alliance'] == 'red') {
           outcome = Outcome.redWin;
         } else if (matchJson['winning_alliance'] == 'blue') {

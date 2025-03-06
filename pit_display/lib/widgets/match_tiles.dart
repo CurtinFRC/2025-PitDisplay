@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pit_display/model/match.dart';
 import 'package:pit_display/styles/colours.dart';
 import 'dart:async';
+import 'package:logger/logger.dart';
 
 
 
@@ -22,6 +23,20 @@ class UpcomingMatchTile extends StatefulWidget {
 class UpcomingMatchTileState extends State<UpcomingMatchTile> {
   String? estimatedStartTime;
   Timer? timer;
+  int? winChance;
+
+  var logger = Logger();
+  String _getWinChance() {
+    if (widget.match.statboticsPred != null) {
+      if (widget.match.weAreRed == false) {
+        return "${(100 - (widget.match.statboticsPred!)).toString()}%";
+      } else {
+        return "${widget.match.statboticsPred.toString()}%";
+      }
+    } else {
+      return "not found";
+    }
+  }
 
   void _updateEstimatedTime() {
     setState(() {
@@ -72,7 +87,7 @@ class UpcomingMatchTileState extends State<UpcomingMatchTile> {
             Spacer(flex: 1),
             _alliances(widget.match),
             Spacer(flex: 2),
-            Text((widget.match.statboticsPred != null) ? "${widget.match.statboticsPred}%" : "not found"),
+            Text(_getWinChance()),
             Spacer(flex: 2),
             SizedBox(
               width: 90,
@@ -199,6 +214,18 @@ Widget nextMatchTile(List<Match> matches, BuildContext context) {
     return const Card();
   }
 
+  String getWinChance() {
+    if ((matches[upcomingMatchIndex!] as UpcomingMatch).statboticsPred != null) {
+      if (matches[upcomingMatchIndex].weAreRed == false) {
+        return "${(100 - ((matches[upcomingMatchIndex] as UpcomingMatch).statboticsPred!)).toString()}%";
+      } else {
+        return "${(matches[upcomingMatchIndex] as UpcomingMatch).statboticsPred.toString()}%";
+      }
+    } else {
+      return "not found";
+    }
+  }
+
   UpcomingMatch upcomingMatch = matches[upcomingMatchIndex] as UpcomingMatch;
 
   String estimatedStartTime;
@@ -215,6 +242,7 @@ Widget nextMatchTile(List<Match> matches, BuildContext context) {
     }
   }
 
+
   return SizedBox(
     height: 60,
     child: Card(
@@ -229,12 +257,13 @@ Widget nextMatchTile(List<Match> matches, BuildContext context) {
               Text("Match", style: TextStyle(fontWeight: FontWeight.bold)),
               Spacer(flex: 10),
               Text("Red Alliance", style: TextStyle(fontWeight: FontWeight.bold)),
-              Spacer(flex: 3),
+              Spacer(flex: 4),
               Text("Blue Alliance", style: TextStyle(fontWeight: FontWeight.bold)),
-              Spacer(flex: 17),
+              Spacer(flex: 16),
               Text("Estimated Start Time", style: TextStyle(fontWeight: FontWeight.bold)),
               Spacer(flex: 10),
-              Text("StatBotics Pred (red win %)", style: TextStyle(fontWeight: FontWeight.bold)),
+              Text("Estimated Win Chance", style: TextStyle(fontWeight: FontWeight.bold)),
+              Spacer(flex: 1),
             ],
           ),
           Spacer(),
@@ -247,7 +276,8 @@ Widget nextMatchTile(List<Match> matches, BuildContext context) {
               Spacer(flex: 38),
               Text(estimatedStartTime),
               Spacer(flex: 34),
-              Text((upcomingMatch.statboticsPred != null) ? "${upcomingMatch.statboticsPred}%" : "not found"),
+              // Text((matches[upcomingMatchIndex] as UpcomingMatch).statboticsPred != null ? getWinChance() : "not found"),
+              Text(getWinChance()),
               Spacer(flex: 8)
             ],
           ),
@@ -290,7 +320,7 @@ Widget upcomingHeaderTile() {
         Spacer(flex: 2),
         Text("Blue Alliance", style: TextStyle(fontWeight: FontWeight.bold)),
         Spacer(flex: 1),
-        Text("StatBotics Pred (red win %)", style: TextStyle(fontWeight: FontWeight.bold)),
+        Text("Estimated Win Chance", style: TextStyle(fontWeight: FontWeight.bold)),
         Spacer(flex: 1),
         Text("ETA", style: TextStyle(fontWeight: FontWeight.bold)),
         Spacer(flex: 1),

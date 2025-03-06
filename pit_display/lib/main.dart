@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 // import 'package:nt4/nt4.dart';
 // import 'package:logger/logger.dart';
-// import 'package:pit_display/services/tba_api.dart';
 import 'dart:io';
 import 'package:window_manager/window_manager.dart';
 import 'package:pit_display/pages/match_schedule.dart';
@@ -27,8 +26,8 @@ void main() async {
   });
 
   final SharedPreferences prefs = await SharedPreferences.getInstance();
-  await prefs.setInt('teamNumber', 9026);
-  await prefs.setString('eventKey', '2025tuis');
+  await prefs.setInt('teamNumber', 4788);
+  await prefs.setString('eventKey', '2025ausc');
 
   MatchDataService().initialize();
 
@@ -37,6 +36,11 @@ void main() async {
 
 class PitDisplay extends StatelessWidget {
   const PitDisplay({super.key});
+
+  void dispose() async {
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.clear();
+  }
 
   // This widget is the root of your application.
   @override
